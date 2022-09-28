@@ -11,6 +11,7 @@
    header to act as a transparent proxy but configurations can be
    modified in the `tinyproxy-install.sh` script.
 
+  - **Default region is us-east-1 and default security group is grabbed from your public IP.**
 
 Requires **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY** environment variables present or simply place your AWS rootkeys.csv file in the same directory as the script.
 
