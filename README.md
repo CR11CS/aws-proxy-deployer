@@ -1,5 +1,7 @@
 ## AWS Proxy Deployer
 
+#### **Terraform installer and wrapper for rapidly deploying or destroying web-proxies configured for access only by the specified user(s).**
+
  - Quickly deploy or destroy an AWS EC2 instance proxy server from the
    command line with your specified security group in CIDR notation in
    your specified region.
@@ -11,7 +13,7 @@
    header to act as a transparent proxy but configurations can be
    modified in the `tinyproxy-install.sh` script.
 
-  - **Default region is us-east-1 and default security group is grabbed from your public IP.**
+  - Default region is us-east-1 and default security group is grabbed from your public IP.
 
 Requires **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY** environment variables present or simply place your AWS rootkeys.csv file in the same directory as the script.
 
