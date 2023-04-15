@@ -1,6 +1,6 @@
 ############################ base_proxy_location.tf
 terraform {
-  required_version = "~>1.2.3"
+  required_version = "~>1.4.5"
   required_providers {
     aws = {
       source  = "hashicorp/aws"

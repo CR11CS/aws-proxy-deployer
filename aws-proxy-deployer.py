@@ -67,11 +67,8 @@ class InitializeScript:
         """Extracts AWS keys from a .csv file as provided by Amazon."""
         with open("rootkey.csv") as key_file:
             aws_variables = csv.reader(key_file)
-            for row in aws_variables:
-                if "access" in row[0].lower():
-                    access_key = row[0].split('=')[1]
-                elif "secret" in row[0].lower():
-                    secret_key = row[0].split('=')[1]
+            csv_header = next(key_file)
+            access_key, secret_key = [key.strip() for key in next(key_file).split(",")]
         return access_key, secret_key
 
     @staticmethod

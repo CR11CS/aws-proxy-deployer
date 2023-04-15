@@ -1,7 +1,7 @@
 sudo DEBIAN_FRONTEND=noninteractive apt-get update -y
 sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 sudo DEBIAN_FRONTEND=noninteractive apt-get install tinyproxy -y
-echo "#Specify valid TinyProxy configurations in here. It's recommended not to alter this file unless you're absolutely sure you know what you're doing.
+sudo echo "#Specify valid TinyProxy configurations in here. It's recommended not to alter this file unless you're absolutely sure you know what you're doing.
 User tinyproxy
 Group tinyproxy
 Port 8888
